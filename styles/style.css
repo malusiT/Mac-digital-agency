@@ -8,11 +8,9 @@
 }
 
 body{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-inline: 4rem;
-	/* align-items: center; */
+	display: block;
+	margin: 0;
+	padding-inline: 30px;
 }
 
 :root{
@@ -23,21 +21,22 @@ body{
 	--color-secondary: #878C91;
 	--color-accent: #f59e0b;
 }
+header{
+	min-height: 110px;
+	width: 100%;
+	min-width: unset;
+	display: flex;
+}
 
 .nav-bar{
-	padding: 0;
-	margin: 0;
+	padding: 30px 30px;
+	width: 100dvw;
+	/* margin-inline: 1.875rem; */
+	gap: 20rem;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	gap: 20rem;
-	height: 110px;
-	width: 90rem;
-	min-width: unset;
-	/* margin-inline: 4rem; */
-
-	/* background: grey; */
 }
 
 .title-and-logo{
@@ -134,8 +133,14 @@ body{
 }
 
  /*Hero Section styles*/
+
+
+
  #hero-section{
 	display: flex;
+	margin-top: 1rem;
+	/* padding: 30px 80px 30px 80px; */
+;
 	/* justify-content: center; */
 	/* align-items: center; */
  }
@@ -147,11 +152,11 @@ body{
 	align-items: center;
 	place-items: center;
 	gap: 1px;
-	/* height: 775px; */
+	height: 775px;
 	width: 100%;
 	margin: 0 auto; 
-	height: calc(100vh - 110px); /* hero takes rest of the screen after navbar */
- 
+	max-height: calc(100vh - 120px); /* hero takes rest of the screen after navbar */
+
 }
 .hero-left, .hero-right{
 	margin: 2.25rem;
@@ -248,9 +253,39 @@ body{
 	background-image: url("./assets/hero-right-rectangle");
 }
 .inner-top{
-	background-color:#22262a;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+	height: 17.5625rem; /* 281px*/
 }
+/* .grid-top-right, .grid-top-left{
+} */
+
+.grid-top-right{
+	background-color:#F0F0F0;
+	border-radius: 1.375rem; /* 22 pixels */
+	gap: 1.8875em;
+}
+.grid-top-right > h2{
+	font-family: var(--font-sans);
+	font-weight: bold;
+	letter-spacing: -3%;
+	font-size: 5.25em; /*/84 pixels */
+}
+.grid-top-right > p{
+	font-family: var(--font-sans);
+	font-size: 1rem;
+	font-weight: 500;
+	color: #5C5D5F;
+	line-height: 150%;
+}
+
+
+
+
+
+/* bottom right hero section (its dine do not touch) */
 
 .inner-bottom{
 	min-height: 13.5rem;
