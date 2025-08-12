@@ -4,7 +4,17 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: inherit;
 }
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-inline: 4rem;
+	/* align-items: center; */
+}
+
 :root{
 	--font-sans: "Plus Jakarta Sans", sans-serif;
 	--secondary-font-family: "Manrope", sans-serif;
@@ -21,11 +31,22 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	gap: 20rem;
 	height: 110px;
-	min-width: 1440px;
+	width: 90rem;
+	min-width: unset;
+	/* margin-inline: 4rem; */
+
 	/* background: grey; */
 }
-h1{
+
+.title-and-logo{
+	display: flex;
+	flex-direction: row;
+	margin-inline: 5px;
+}
+.title-and-logo > a{
+	text-decoration: none;
 	margin: 5px 5px 0px 5px;
 	padding: 0;
 	line-height: 1.5rem;
@@ -35,13 +56,7 @@ h1{
 	font-weight: bold;
 	letter-spacing: -1px;
 	text-align: center;
-}
-
-
-.title-and-logo{
-	display: flex;
-	flex-direction: row;
-	margin-inline: 5px;
+	color: var(--color-primary);
 }
 
 
@@ -65,7 +80,7 @@ h1{
 	margin: 0;
 	padding: 0;
 	align-items: center;
-	gap: 33px;
+	gap: 2.063rem;
 	white-space: nowrap;
 }
 
@@ -118,6 +133,167 @@ h1{
 	min-height: 50px;
 }
 
-.right-content .bell-logo img{
+ /*Hero Section styles*/
+ #hero-section{
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+ }
 
+.hero{
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	place-items: center;
+	gap: 1px;
+	/* height: 775px; */
+	width: 100%;
+	margin: 0 auto; 
+	height: calc(100vh - 110px); /* hero takes rest of the screen after navbar */
+ 
+}
+.hero-left, .hero-right{
+	margin: 2.25rem;
+}
+
+.hero-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	height: 34.188rem;
+}
+.hero-left .top-left-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 3rem;
+	width: 700px;
+	height: 25.313rem;
+}
+.cta{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:2.5rem;
+}
+
+.hero-left .top-left-content h1{
+	font-family: var(--font-sans);
+	font-size: 4.5rem;
+	font-weight: 600;
+	letter-spacing: -3%;
+	line-height: 110%;
+}
+
+.hero-left .top-left-content p{
+	color: #878C91;
+	font-family: var(--font-sans);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 180%;
+}
+.hero-left .top-left-content .cta-btn{
+	border-radius: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.625rem;
+	width: 233px;
+	height: 3.5rem;
+	color: #fff;
+	font-family: var(--font-sans);
+	background-color: var(--color-primary);
+	font-weight: bold;
+	letter-spacing: -2%;
+	font-size: 1rem;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.hero-left .top--left-content .cta-link, a{
+	color: var(--color-primary);
+	font-family: var(--font-sans);
+	cursor: pointer;
+}
+
+.bottom-left-content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 33px;
+	gap: 4rem
+}
+
+.bottom-left-content p{
+	word-wrap: break-word;
+	font-family: var(--font-sans);
+	color: var(--color-primary);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 180%;
+	width: 9.4rem;
+}
+
+.hero-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	width: 700px;
+	height: 547px;
+}
+.bg-image{
+	background-image: url("./assets/hero-right-rectangle");
+}
+.inner-top{
+	background-color:#22262a;
+	text-align: center;
+}
+
+.inner-bottom{
+	min-height: 13.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* background-color: #b3abab; */
+	padding-inline: 0.94rem ;
+	color:#fff;
+	background-color: #010205;
+	border-radius: 1.25rem;
+}
+.inner-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 2rem;
+}
+.small-text{
+	display: inline-flex;
+	flex-direction: row;
+	justify-items: start;
+	/* display: flex;
+	flex-direction: ; */
+	font-size: 0.875rem;
+	font-weight: 600;
+	font-family: var(--font-sans);
+	gap:0.813rem;
+	margin: 0;
+}
+.big-text{
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: var(--font-sans);
+
+}
+
+.blocks{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+	gap: 0.625rem;
+	
 }
