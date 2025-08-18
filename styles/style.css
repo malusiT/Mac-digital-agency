@@ -353,7 +353,7 @@ header{
 
 .service-header{
 	min-height: 6.4375rem; /* 103px */
-	background-color: #f59e0b;
+	/* background-color: #f59e0b; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -385,11 +385,14 @@ header{
 	color:var(--color-secondary);
 	word-break: normal;
 }
+
 .bottom-services{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	gap: 10px;;
+	justify-content: space-around;
+	width: 100%;
+	min-height: 382px;
+	gap: 24px;
 	/* align-items: center; */
 }
 
@@ -406,7 +409,7 @@ header{
 	align-items: baseline;
 }
 
-.projects h2, span{
+.projects h2, .projects span{
 	color: #F0F0F0;
 	font-size: 5.25rem;
 	font-family: var(--font-sans);
@@ -437,7 +440,7 @@ header{
 	gap: 7px;
 	min-height: 4.375rem; /* 70px */
 	max-width: 22.3125rem; /* 357px */
-
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -460,8 +463,8 @@ header{
 }
 
 .service-video{
-	width: 818px;
-	height: 382px;
+	width: 51.125rem;
+	min-height: 23.875rem;
 	border-radius: 30px;
 
 	background-color: #CCB2B2;
@@ -492,6 +495,81 @@ header{
 	bottom: -20px;
 }
 
+/* Examples Section */
 
+.examples{
+	gap: 32px;
+	margin: 0;
+	padding: 0;
+}
+
+.examples-container{
+	background-color: #020609;
+	color: #fff;
+	border-radius: 30px;
+	max-width: 100%;
+	min-height: 926px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding:  30px 5px 30px 30px;
+}
+
+.examples-container header{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-content: center;
+	 align-items: center;
+
+	 gap: 53px;
+	 min-height: 200px;
+}
+
+.examples-container .examples-title{
+	font-size: 48px;
+	font-family: var(--font-sans);
+	font-weight: 500;
+	letter-spacing: -3%;
+	line-height: 130%;
+	text-align: center;
+}
+
+.examples-container .category-buttons{
+	min-height: 48px;
+	max-width: 1016px;
+	gap: 24px;
+
+	display: flex;
+	flex-direction: row;
+	justify-self: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.examples-container .category-button{
+	color: #fff;
+	background-color: transparent;
+	border-radius: 50px;
+	gap: 3rem;
+	height: 48px;
+	width: 236px;
+
+	border: 1px solid #fff;
+	text-align: center;
+
+	font-family: var(--secondary-font-family);
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: -2%;
+}
+
+
+#my-buttons > .active{
+	background-color: #99CF63;
+	color: #010205;
+}
 
 
