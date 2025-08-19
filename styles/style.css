@@ -573,6 +573,7 @@ header{
 
 .example-content{
 	min-height: 460px;
+	
 	max-width: calc(100% - 1.625rem);
 	/* background-color: yellow; */
 	gap:54px;
@@ -582,7 +583,7 @@ header{
 	/* justify-content: center; */
 	align-items: center;
 	flex-wrap: nowrap;
-	margin-left: 1.625rem;
+	margin-left: 1rem;
 }
 
 .example-block{
@@ -590,13 +591,13 @@ header{
 	height:  28.75rem;
 	background-color: #C3C3C3;
 	margin: auto;
-
 	border: 0.625rem solid #686C72;
 	
 }
 
 .circle{
-	border-radius: calc(50%);
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
